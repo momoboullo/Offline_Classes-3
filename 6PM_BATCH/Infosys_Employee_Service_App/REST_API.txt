@@ -1,0 +1,39 @@
+-------------------------------
+CREATE Opeation
+-------------------------------
+path : /api/employees/
+HTTP Method : POST
+Express method : app.post()
+mongo DB : mongodb.insertOne()
+
+-------------------------------
+READ All Opeation
+--------------------------------
+path : /api/employees/
+HTTP Method : GET
+Express method : app.get()
+mongo DB : mongodb.find()
+
+-------------------------------
+READ Single Opeation
+--------------------------------
+path : /api/employees/:id
+HTTP Method : GET
+Express method : app.get()
+mongo DB : mongodb.find({id : id })
+
+-------------------------------
+UPDATE Opeation
+--------------------------------
+path : /api/employees/:id
+HTTP Method : PUT
+Express method : app.put()
+mongo DB : mongodb.findOneAndUpdate({id : id })
+
+-------------------------------
+DELETE Opeation
+--------------------------------
+path : /api/employees/:id
+HTTP Method : DELETE
+Express method : app.delete()
+mongo DB : mongodb.deleteOne({id : id })
